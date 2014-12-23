@@ -1,0 +1,22 @@
+Relatório da Entrega Final do Projecto de Compiladores
+
+Alunos:
+
+Paulo Martins #72976
+Rodrigo Monteiro #73701
+
+Ainda relativamente à segunda entrega, pensavamos ter o Scanner e o Parser em condições, e pronto para continuar o projecto para a entrega final,
+mas tal não se verificou, pois haviam pormenores que estavam em falta quer num, quer noutro ficheiro, que eram importantes serem resolvidos para
+que a entrega final tivesse menos problemas. 
+
+No scanner alterámos o estado "X_STRING" de modo a reconhecer e converter hexadecimais e criámos também
+um sub-estado auxiliar neste ultimo estado anterior. No Parser acrescentamos, essencialmente, os elementos opcionais nas funções, que anteriormente
+não tinhamos e melhorámos a utilização do Left Value.
+
+No que diz respeito ao TypeValidator tivemos alguns problemas ao nível da implementação da função de Process do LeftValue,
+que nos trouxe bastantes contratempos nos testes automáticos visto que nos impediu de passar a muitos deles.
+
+No PFWriter tivemos muitas dificuldades na implementação do processamento dos For Nodes e do LeftValue, funções essas a que dedicamos
+bastante tempo, no entanto foi um esforço que se revelou inglório, sem nunca termos obtido uma implementação condizente com o pretendido.
+
+ 

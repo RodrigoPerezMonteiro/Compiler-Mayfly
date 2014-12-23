@@ -1,0 +1,23 @@
+Relatório da Entrega Intermédia do Projecto de Compiladores
+
+Alunos:
+
+Paulo Martins #72976
+Rodrigo Monteiro #73701
+
+Em relação à entrega intermédia, alterámos o Scanner, de modo a criar um analisador lexical que reconhece a nova linguagem "mayfly"; também o Parser (yacc),
+onde criámos uma gramática capaz de interpretar a linguagem analisada previamente pelo Scanner (flex); e também a geração de nós através do XMLwriter.
+
+Para termos conseguido colocar esta parte funcional,tivemos que alterar diversos nós que já tinhamos (principalmente os seus constructores e funções get's),
+mas também foi necessário criarmos outros.
+
+No Scanner: tivemos algumas dificuldades no reconhecimento de strings consecutivas e também no aparecimento de aspas no meio de uma string,
+mas no cômputo geral do flex, parece-nos que tudo se encontra funcional de acordo com o pretendido no enunciado desta nova linguagem;
+
+No Parser: a principal dificuldade foi eliminar conflitos derivados da recursividade e também problemas em distinguir e conjugar LeftValue com Expressions.
+Conseguimos resolver todos os shift/reduce e reduce/reduce, com relativa facilidade através da criação de novas regras ou de
+uma análise pormenorizada no estado onde estavam a ocorrer estes conflitos;
+
+XMLwriter: esta é a parte desta entrega que se encontra mais incompleta, por termos dado mais importância à análise semântica e lexical do que à produção de output.
+Embora o projecto compile e passe em todos os testes disponibilizados, temos algumas duvidas quanto ao bem funcionamente de tudo
+(talvez também por não terem existido "dailies" nesta entrega intermédia).
